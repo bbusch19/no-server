@@ -19,11 +19,13 @@ p {
 a {
   text-decoration: none;
   font-family: "Lora", serif;
+  color: white;
 
 }
 
 h1 {
   font-family: "Lora", serif;
+  font-size: 50px;
 }
 
 
@@ -45,6 +47,9 @@ h1 {
   font-size: 20px;
   margin: auto;
   border-radius: 5px;
+  -webkit-box-shadow: -2px 3px 39px -6px rgba(0,0,0,0.87);
+-moz-box-shadow: -2px 3px 39px -6px rgba(0,0,0,0.87);
+box-shadow: -2px 3px 39px -6px rgba(0,0,0,0.87);
 }
 
 .home-wrapper {
@@ -71,71 +76,159 @@ h1 {
   font-size: 80px;
   color: white;
   display: inline-block;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .play {
   width: 90%;
-  height: 300px;
+  min-height: 300px;
   background: white;
   text-align: center;
-  padding-top: 50px;
+  padding-top: 20px;
   border-bottom: 1px solid lightgrey;
   margin: auto;
 }
 
 .play-button {
   width: 150px;
-  height: 30px;
+  height: 40px;
   background: #00CCCC;
   color: white;
   text-align: center;
-  padding-top: 3.5px;
+  padding-top: 7px;
   font-size: 20px;
   margin: auto;
   margin-top: 10px;
   border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  -webkit-box-shadow: -2px 3px 22px -6px rgba(0,0,0,0.87);
+  -moz-box-shadow: -2px 3px 22px -6px rgba(0,0,0,0.87);
+  box-shadow: -2px 3px 22px -6px rgba(0,0,0,0.87);
 }
 
 .learn-more {
   width: 90%;
-  height: 300px;
+  min-height: 300px;
   background: none;
   margin: auto;
   text-align: center;
   padding-top: 50px;
+  border-bottom: 1px solid lightgrey;
+  margin-bottom: 10px;
 }
 
 .learn-more-button {
   width: 150px;
-  height: 30px;
+  min-height: 40px;
   background: #00CCCC;
   color: white;
   text-align: center;
-  padding-top: 3.5px;
+  padding-top: 6px;
   font-size: 20px;
   margin: auto;
   margin-top: 10px;
   border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  -webkit-box-shadow: -2px 3px 22px -6px rgba(0,0,0,0.87);
+  -moz-box-shadow: -2px 3px 22px -6px rgba(0,0,0,0.87);
+  box-shadow: -2px 3px 22px -6px rgba(0,0,0,0.87);
 }
 
-.rules-wrapper {
+.rule-page {
+  width: 100%;
+  height: 100vh;
+  background: url('img/blue-blur.jpg') center no-repeat;
+  background-size: cover;
+  padding-top: 200px;;
+}
+
+/*.rules-wrapper {
   width: 80%;
   height: auto;
   margin: auto;
   background: lightgrey;
   border-radius: 5px;
   text-align: center;
-  margin-top: 60px;
   padding-top: 5px;
   padding-bottom: 5px;
-}
+  -webkit-box-shadow: -1px 3px 40px -9px rgba(0,0,0,0.75);
+  -moz-box-shadow: -1px 3px 40px -9px rgba(0,0,0,0.75);
+  box-shadow: -1px 3px 40px -9px rgba(0,0,0,0.75);
+}*/
 
 .rule-button {
-  height: 50px;%;
-  padding-top: 10px;
-  background: #00CCCC;
+  height: 50px;
+  padding-top: 15px;
+  background: white;
   border-radius: 5px;
   margin: 5px auto 0 auto;
-  width: 95%;
+  width: 60%;
+  text-align: center;
+  font-size: 20px;
+  -webkit-box-shadow: inset -2px 3px 24px -6px rgba(0,0,0,0.75);
+  -moz-box-shadow: inset -2px 3px 24px -6px rgba(0,0,0,0.75);
+  box-shadow: inset -2px 3px 24px -6px rgba(0,0,0,0.75);
+}
+
+.new-game {
+  width: 150px;
+  min-height: 40px;
+  background: #00CCCC;
+  color: white;
+  text-align: center;
+  padding-top: 7px;
+  font-size: 20px;
+  /*margin: auto;*/
+  border-radius: 5px;
+  margin-bottom: 20px;
+  -webkit-box-shadow: -2px 3px 22px -6px rgba(0,0,0,0.87);
+  -moz-box-shadow: -2px 3px 22px -6px rgba(0,0,0,0.87);
+  box-shadow: -2px 3px 22px -6px rgba(0,0,0,0.87);
+  position: absolute;
+  left: 50%;
+  margin-left: -75px;
+  top: 50px;
+}
+
+.play-page {
+  width: 100%;
+  height: 100vh;
+  background: url('img/blue-blur.jpg') center no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.new-game-form {
+  width: 400px;
+  min-height: 200px;
+  margin: auto;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  margin-left: -203px;
+  top: 110px;
+  background: white;
+  padding-top: 20px;
+  border-radius: 5px;
+  -webkit-box-shadow: -2px 3px 22px -6px rgba(0,0,0,0.87);
+  -moz-box-shadow: -2px 3px 22px -6px rgba(0,0,0,0.87);
+  box-shadow: -2px 3px 22px -6px rgba(0,0,0,0.87);
+}
+
+.submit {
+  width: 150px;
+  min-height: 40px;
+  background: #00CCCC;
+  color: white;
+  text-align: center;
+  padding-top: 7px;
+  font-size: 20px;
+  margin: auto;
+  margin-top: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  -webkit-box-shadow: -2px 3px 22px -6px rgba(0,0,0,0.87);
+  -moz-box-shadow: -2px 3px 22px -6px rgba(0,0,0,0.87);
+  box-shadow: -2px 3px 22px -6px rgba(0,0,0,0.87);
 }

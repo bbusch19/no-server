@@ -20,5 +20,10 @@ angular.module('pongBreak', ['ui.router'])
     templateUrl: 'components/views/rulesTmpl.html',
     controller: 'rulesCtrl'
   })
+  .state('play', {
+    url: '/play',
+    templateUrl: 'components/views/playTmpl.html',
+    controller: 'playCtrl'
+  })
 
 })
