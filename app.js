@@ -37,7 +37,15 @@ angular.module('pongBreak', ['ui.router', 'firebase'])
   .state('play', {
     url: '/series/:seriesId',
     templateUrl: 'components/views/playTmpl.html',
-    controller: 'playCtrl'
+    controller: 'playCtrl',
+    resolve: {
+      seriesReference: function(seriesService, $stateParams) {
+        return seriesService.pullSeries($stateParams.seriesId)
+      },
+      gamesRef: function(seriesService, $stateParams) {
+        return seriesService.getGames($stateParams.seriesId)
+      }
+    }
   })
 
 })

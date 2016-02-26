@@ -204,10 +204,7 @@ box-shadow: -2px 3px 39px -6px rgba(0,0,0,0.87);
   -webkit-box-shadow: -2px 3px 22px -6px rgba(0,0,0,0.87);
   -moz-box-shadow: -2px 3px 22px -6px rgba(0,0,0,0.87);
   box-shadow: -2px 3px 22px -6px rgba(0,0,0,0.87);
-  position: absolute;
-  left: 50%;
-  margin-left: -75px;
-  top: 50px;
+  margin: auto;
 }
 
 .play-page {
@@ -216,19 +213,18 @@ box-shadow: -2px 3px 39px -6px rgba(0,0,0,0.87);
   background: url('img/blue-blur.jpg') center no-repeat;
   background-size: cover;
   position: relative;
+  text-align: center;
 }
 
 .new-game-form {
   width: 400px;
-  min-height: 200px;
+  min-height: 100px;
   margin: auto;
+  margin-top: 10px;
   text-align: center;
-  position: absolute;
-  left: 50%;
-  margin-left: -203px;
-  top: 110px;
   background: white;
   padding-top: 20px;
+  padding-bottom: 10px;
   border-radius: 5px;
   -webkit-box-shadow: -2px 3px 22px -6px rgba(0,0,0,0.87);
   -moz-box-shadow: -2px 3px 22px -6px rgba(0,0,0,0.87);
@@ -257,7 +253,6 @@ box-shadow: -2px 3px 39px -6px rgba(0,0,0,0.87);
   height: 100vh;
   background: url('img/blue-blur.jpg') center no-repeat;
   background-size: cover;
-  /*position: relative;*/
   padding-top: 20px;
 }
 
@@ -307,4 +302,23 @@ box-shadow: -2px 3px 39px -6px rgba(0,0,0,0.87);
 
 .series-link {
   color: black;
+}
+
+.game-list {
+  width: 300px;
+  min-height: 60px;
+  margin: auto;
+  margin-top: 10px;
+  text-align: center;
+  background: white;
+  padding-top: 10px;
+  border-radius: 5px;
+  -webkit-box-shadow: -2px 3px 22px -6px rgba(0,0,0,0.87);
+  -moz-box-shadow: -2px 3px 22px -6px rgba(0,0,0,0.87);
+  box-shadow: -2px 3px 22px -6px rgba(0,0,0,0.87);
+}
+
+.series-title {
+  font-family: "Crimson Text", serif;
+  margin-top: 0;
 }

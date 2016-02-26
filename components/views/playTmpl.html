@@ -1,22 +1,24 @@
 <div class="play-page">
+  <h2 class="series-title">{{series.player1Name}} V. {{series.player2Name}}</h2>
+
   <div class="new-game" highlight-directive>
     <p ng-click="toggleNewGameForm(showNewGameForm)">
       New Game
     </p>
   </div>
   <form class="new-game-form" ng-show="showNewGameForm">
-    <input placeholder="Player1" ng-model="newGame.player1" />
-    <input type="number" placeholder="{{newGame.player1}} score" ng-model="newGame.player2Score"/>
+    <input type="number" placeholder="{{series.player1Name}} score" ng-model="player1Score"/>
+    <input  type="number" placeholder="{{series.player2Name}} score" ng-model="player2Score"/>
     <br />
-    <br />
-    <input placeholder="Player2" ng-model="newGame.player2"/>
-    <input  type="number" placeholder="{{newGame.player2}} score" ng-model="newGame.player2Score"/>
-    <br />
-    <div class="submit">
+    <div class="submit" ng-click="createGame(player1Score, player2Score)" highlight-directive>
       <p>
         Submit
       </p>
     </div>
   </form>
+  <div class="game-list" ng-repeat="game in games">
+    <strong>Final Score:</strong><br />
+    {{series.player1Name}}: {{game.player1Score}} {{series.player2Name}}: {{game.player2Score}}
+  </div>
 
 </div>
