@@ -16,8 +16,11 @@
   </form>
 
   <div class="series-list" ng-repeat="info in series">
-    <p>
-      {{info.player1Name}} V {{info.player2Name}}
-    </p>
+    <a class = "series-link" ui-sref="play({seriesId: info.$id})">
+      <p>
+        {{info.player1Name}} V {{info.player2Name}}
+      </p>
+    </a>
+
   </div>
 </main>

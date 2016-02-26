@@ -35,7 +35,7 @@ angular.module('pongBreak', ['ui.router', 'firebase'])
     }
   })
   .state('play', {
-    url: '/play',
+    url: '/series/:seriesId',
     templateUrl: 'components/views/playTmpl.html',
     controller: 'playCtrl'
   })

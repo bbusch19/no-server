@@ -304,3 +304,7 @@ box-shadow: -2px 3px 39px -6px rgba(0,0,0,0.87);
   -moz-box-shadow: -2px 3px 22px -6px rgba(0,0,0,0.87);
   box-shadow: -2px 3px 22px -6px rgba(0,0,0,0.87);
 }
+
+.series-link {
+  color: black;
+}
