@@ -1,7 +1,17 @@
 <div class="rule-page">
   <div>
-    <div class="rule-button" ng-repeat="rule in rules">
-      {{rule}}
+    <div class="return-home" ui-sref="home" highlight-directive>
+      <p>
+        Return Home
+      </p>
+    </div>
+    <div class="rule-button" ng-repeat="rule in rules" slide-down-and-up>
+      {{rule.name}}
+      <br />
+      <br />
+      <p class="rule-descrip">
+        {{rule.descrip}}
+      </p>
     </div>
   </div>
 
