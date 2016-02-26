@@ -1,4 +1,8 @@
-angular.module('pongBreak', ['ui.router'])
+angular.module('pongBreak', ['ui.router', 'firebase'])
+
+.constant('fb', {
+  url: 'https://pongbreak.firebaseio.com/'
+})
 
 .config(function($stateProvider, $urlRouterProvider) {
 
@@ -19,6 +23,16 @@ angular.module('pongBreak', ['ui.router'])
     url: '/rules',
     templateUrl: 'components/views/rulesTmpl.html',
     controller: 'rulesCtrl'
+  })
+  .state('series', {
+    url: '/series',
+    templateUrl: 'components/views/seriesTmpl.html',
+    controller: 'seriesCtrl',
+    resolve: {
+      seriesRef: function(seriesService) {
+        return seriesService.getSeries();
+      }
+    }
   })
   .state('play', {
     url: '/play',

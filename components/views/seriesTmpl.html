@@ -1,0 +1,23 @@
+<main class="series-container">
+  <div class="new-series-button" ng-click="toggleSeriesForm(showSeriesForm)" highlight-directive>
+    <p>
+      New Series
+    </p>
+  </div>
+  <form class="new-series-form" ng-show="showSeriesForm">
+    <input placeholder="Player1 name" ng-model="newPlayer1"/>
+    <input placeholder="Player2 name" ng-model="newPlayer2"/>
+    <div class="submit" ng-click="createSeries(newPlayer1, newPlayer2)" highlight-directive>
+      <p>
+        Submit
+      </p>
+    </div>
+
+  </form>
+
+  <div class="series-list" ng-repeat="info in series">
+    <p>
+      {{info.player1Name}} V {{info.player2Name}}
+    </p>
+  </div>
+</main>
