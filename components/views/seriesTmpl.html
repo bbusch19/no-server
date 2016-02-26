@@ -1,7 +1,12 @@
 <main class="series-container">
-  <div class="new-series-button" ng-click="toggleSeriesForm(showSeriesForm)" highlight-directive>
+  <div class="new-series-button inline" ng-click="toggleSeriesForm(showSeriesForm)" highlight-directive>
     <p>
       New Series
+    </p>
+  </div>
+  <div class="return-home inline" ui-sref="home" highlight-directive>
+    <p>
+      Return Home
     </p>
   </div>
   <form class="new-series-form" ng-show="showSeriesForm">

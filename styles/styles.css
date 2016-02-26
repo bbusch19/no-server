@@ -27,7 +27,16 @@ a {
 
 h1 {
   font-family: "Crimson Text", serif;
-  font-size: 50px;
+  font-size: 60px;
+}
+
+input {
+  height: 30px;
+  text-align: center;
+}
+
+.inline {
+  display: inline-block;
 }
 
 
@@ -45,13 +54,15 @@ h1 {
   background: #00CCCC;
   color: white;
   text-align: center;
-  padding-top: 12px;
+  line-height: 50px;
   font-size: 20px;
-  margin: auto;
-  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -25px 0 0 -75px;
   -webkit-box-shadow: -2px 3px 39px -6px rgba(0,0,0,0.87);
--moz-box-shadow: -2px 3px 39px -6px rgba(0,0,0,0.87);
-box-shadow: -2px 3px 39px -6px rgba(0,0,0,0.87);
+  -moz-box-shadow: -2px 3px 39px -6px rgba(0,0,0,0.87);
+  box-shadow: -2px 3px 39px -6px rgba(0,0,0,0.87);
 }
 
 .home-wrapper {
@@ -61,11 +72,15 @@ box-shadow: -2px 3px 39px -6px rgba(0,0,0,0.87);
 
 .header {
   width: 100%;
-  height: 500px;
-  background: url('img/pong-computer.jpg') center no-repeat;
+  height: 400px;
+  background: url('img/pong-computer.jpg') no-repeat;
+  background-position: bottom;
   background-size: cover;
+  background-attachment: fixed;
   text-align: center;
   padding-top: 150px;
+  position: relative;
+  box-shadow: inset 0 0 5px #111;
 }
 
 .title1 {
@@ -82,7 +97,7 @@ box-shadow: -2px 3px 39px -6px rgba(0,0,0,0.87);
 
 .play {
   width: 90%;
-  min-height: 300px;
+  min-height: 400px;
   background: white;
   text-align: center;
   padding-top: 20px;
@@ -96,11 +111,10 @@ box-shadow: -2px 3px 39px -6px rgba(0,0,0,0.87);
   background: #00CCCC;
   color: white;
   text-align: center;
-  padding-top: 7px;
+  line-height: 40px;
   font-size: 20px;
   margin: auto;
   margin-top: 10px;
-  border-radius: 5px;
   margin-top: 20px;
   margin-bottom: 20px;
   -webkit-box-shadow: -2px 3px 22px -6px rgba(0,0,0,0.87);
@@ -110,7 +124,7 @@ box-shadow: -2px 3px 39px -6px rgba(0,0,0,0.87);
 
 .learn-more {
   width: 90%;
-  min-height: 300px;
+  min-height: 400px;
   background: none;
   margin: auto;
   text-align: center;
@@ -121,15 +135,14 @@ box-shadow: -2px 3px 39px -6px rgba(0,0,0,0.87);
 
 .learn-more-button {
   width: 150px;
-  min-height: 40px;
+  height: 40px;
   background: #00CCCC;
   color: white;
   text-align: center;
-  padding-top: 6px;
+  line-height: 40px;
   font-size: 20px;
   margin: auto;
   margin-top: 10px;
-  border-radius: 5px;
   margin-top: 20px;
   margin-bottom: 20px;
   -webkit-box-shadow: -2px 3px 22px -6px rgba(0,0,0,0.87);
@@ -160,6 +173,7 @@ box-shadow: -2px 3px 39px -6px rgba(0,0,0,0.87);
   -webkit-box-shadow: inset -2px 3px 24px -6px rgba(0,0,0,0.75);
   -moz-box-shadow: inset -2px 3px 24px -6px rgba(0,0,0,0.75);
   box-shadow: inset -2px 3px 24px -6px rgba(0,0,0,0.75);
+  cursor: pointer;
 }
 
 .rule-descrip {
@@ -169,20 +183,20 @@ box-shadow: -2px 3px 39px -6px rgba(0,0,0,0.87);
 
 .return-home {
   width: 150px;
-  min-height: 40px;
+  height: 40px;
   background: #00CCCC;
   color: white;
   text-align: center;
-  padding-top: 5px;
+  line-height: 40px;
   font-size: 20px;
   margin: auto;
   margin-top: 10px;
-  border-radius: 5px;
   margin-top: 20px;
   margin-bottom: 20px;
   -webkit-box-shadow: -2px 3px 22px -6px rgba(0,0,0,0.87);
   -moz-box-shadow: -2px 3px 22px -6px rgba(0,0,0,0.87);
   box-shadow: -2px 3px 22px -6px rgba(0,0,0,0.87);
+  cursor: pointer;
 }
 
 .padding {
@@ -197,14 +211,15 @@ box-shadow: -2px 3px 39px -6px rgba(0,0,0,0.87);
   background: #00CCCC;
   color: white;
   text-align: center;
-  padding-top: 7px;
+  line-height: 40px;
   font-size: 20px;
-  border-radius: 5px;
   margin-bottom: 20px;
+  margin-right: 10px;
   -webkit-box-shadow: -2px 3px 22px -6px rgba(0,0,0,0.87);
   -moz-box-shadow: -2px 3px 22px -6px rgba(0,0,0,0.87);
   box-shadow: -2px 3px 22px -6px rgba(0,0,0,0.87);
-  margin: auto;
+  /*margin: auto;*/
+  cursor: pointer;
 }
 
 .play-page {
@@ -214,6 +229,7 @@ box-shadow: -2px 3px 39px -6px rgba(0,0,0,0.87);
   background-size: cover;
   position: relative;
   text-align: center;
+  overflow-y: scroll;
 }
 
 .new-game-form {
@@ -233,11 +249,11 @@ box-shadow: -2px 3px 39px -6px rgba(0,0,0,0.87);
 
 .submit {
   width: 150px;
-  min-height: 40px;
+  height: 40px;
   background: #00CCCC;
   color: white;
   text-align: center;
-  padding-top: 7px;
+  line-height: 40px;
   font-size: 20px;
   margin: auto;
   margin-top: 20px;
@@ -246,6 +262,7 @@ box-shadow: -2px 3px 39px -6px rgba(0,0,0,0.87);
   -webkit-box-shadow: -2px 3px 22px -6px rgba(0,0,0,0.87);
   -moz-box-shadow: -2px 3px 22px -6px rgba(0,0,0,0.87);
   box-shadow: -2px 3px 22px -6px rgba(0,0,0,0.87);
+  cursor: pointer;
 }
 
 .series-container {
@@ -254,18 +271,19 @@ box-shadow: -2px 3px 39px -6px rgba(0,0,0,0.87);
   background: url('img/blue-blur.jpg') center no-repeat;
   background-size: cover;
   padding-top: 20px;
+  overflow-y: scroll;
+  text-align: center;
 }
 
 .new-series-button {
   width: 150px;
-  min-height: 40px;
+  height: 40px;
   background: #00CCCC;
   color: white;
   text-align: center;
-  margin: auto;
-  padding-top: 7px;
+  margin-right: 10px;
+  line-height: 40px;
   font-size: 20px;
-  border-radius: 5px;
   margin-bottom: 20px;
   -webkit-box-shadow: -2px 3px 22px -6px rgba(0,0,0,0.87);
   -moz-box-shadow: -2px 3px 22px -6px rgba(0,0,0,0.87);

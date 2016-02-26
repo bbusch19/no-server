@@ -1,9 +1,14 @@
 <div class="play-page">
   <h2 class="series-title">{{series.player1Name}} V. {{series.player2Name}}</h2>
 
-  <div class="new-game" highlight-directive>
+  <div class="new-game inline" highlight-directive>
     <p ng-click="toggleNewGameForm(showNewGameForm)">
       New Game
+    </p>
+  </div>
+  <div class="return-home inline" ui-sref="home" highlight-directive>
+    <p>
+      Return Home
     </p>
   </div>
   <form class="new-game-form" ng-show="showNewGameForm">
