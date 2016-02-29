@@ -1,5 +1,16 @@
 <div class="play-page">
-  <h2 class="series-title">{{series.player1Name}} V. {{series.player2Name}}</h2>
+
+    <div class="stats-box">
+      <h2 class="series-title">{{series.player1Name}} Wins: {{series.scoreboard.player1Wins}}</h2>
+    </div>
+    <div class="stats-box">
+      <h2 class="series-title">{{series.player2Name}} Wins: {{series.scoreboard.player2Wins}}</h2>
+    </div>
+
+    <br />
+    <br />
+    <br />
+
 
   <div class="new-game inline" highlight-directive>
     <p ng-click="toggleNewGameForm(showNewGameForm)">

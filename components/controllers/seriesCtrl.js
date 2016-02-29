@@ -12,7 +12,11 @@ angular.module('pongBreak').controller('seriesCtrl', function($scope, $firebaseA
     $scope.showSeriesForm = false;
     $scope.series.$add({
       player1Name: player1,
-      player2Name: player2
+      player2Name: player2,
+      scoreboard: {
+        player1Wins: 0,
+        player2Wins: 0
+      }
     });
   };
 

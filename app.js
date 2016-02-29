@@ -44,6 +44,9 @@ angular.module('pongBreak', ['ui.router', 'firebase'])
       },
       gamesRef: function(seriesService, $stateParams) {
         return seriesService.getGames($stateParams.seriesId)
+      },
+      scoresRef: function(seriesService, $stateParams) {
+        return seriesService.getScores($stateParams.seriesId)
       }
     }
   })

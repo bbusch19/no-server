@@ -15,7 +15,7 @@ body {
 p {
   margin: 0;
   font-family: "Crimson Text", serif;
-  font-size: 20px
+  font-size: 20px;
 }
 
 a {
@@ -28,6 +28,7 @@ a {
 h1 {
   font-family: "Crimson Text", serif;
   font-size: 60px;
+  color: #011A27;
 }
 
 input {
@@ -51,7 +52,7 @@ input {
 .break-button {
   width: 150px;
   height: 50px;
-  background: #00CCCC;
+  background: #063852;
   color: white;
   text-align: center;
   line-height: 50px;
@@ -108,8 +109,7 @@ input {
 .play-button {
   width: 150px;
   height: 40px;
-  background: #00CCCC;
-  color: white;
+  background: #063852;
   text-align: center;
   line-height: 40px;
   font-size: 20px;
@@ -136,7 +136,7 @@ input {
 .learn-more-button {
   width: 150px;
   height: 40px;
-  background: #00CCCC;
+  background: #063852;
   color: white;
   text-align: center;
   line-height: 40px;
@@ -153,7 +153,7 @@ input {
 .rule-page {
   width: 100%;
   height: 100vh;
-  background: url('img/blue-blur.jpg') center no-repeat;
+  /*background: url('img/blue-blur.jpg') center no-repeat;*/
   background-size: cover;
   padding-top: 100px;
   padding-bottom: 100px;
@@ -161,18 +161,17 @@ input {
 }
 
 .rule-button {
-  min-height: 50px;
+  min-height: 100px;
   padding-top: 15px;
   background: white;
-  border-radius: 5px;
-  margin: 5px auto 0 auto;
-  width: 60%;
+  margin: 5px auto 10px auto;
+  width: 70%;
   text-align: center;
   font-family: "Crimson Text", serif;
-  font-size: 25px;
-  -webkit-box-shadow: inset -2px 3px 24px -6px rgba(0,0,0,0.75);
-  -moz-box-shadow: inset -2px 3px 24px -6px rgba(0,0,0,0.75);
-  box-shadow: inset -2px 3px 24px -6px rgba(0,0,0,0.75);
+  font-size: 35px;
+  -webkit-box-shadow: -2px 3px 22px -6px rgba(0,0,0,0.87);
+  -moz-box-shadow: -2px 3px 22px -6px rgba(0,0,0,0.87);
+  box-shadow: -2px 3px 22px -6px rgba(0,0,0,0.87);
   cursor: pointer;
 }
 
@@ -181,10 +180,11 @@ input {
   margin-bottom: 10px;
 }
 
+
 .return-home {
   width: 150px;
   height: 40px;
-  background: #00CCCC;
+  background: #063852;
   color: white;
   text-align: center;
   line-height: 40px;
@@ -208,7 +208,7 @@ input {
 .new-game {
   width: 150px;
   min-height: 40px;
-  background: #00CCCC;
+  background: #063852;
   color: white;
   text-align: center;
   line-height: 40px;
@@ -222,14 +222,22 @@ input {
   cursor: pointer;
 }
 
+/*.new-game:hover {
+  box-shadow: -2px 10px 30px -6px rgba(0,0,0,0.87);
+  background: white;
+  color: #063852;
+  transition: all 0.2s ease-in-out;
+}*/
+
 .play-page {
   width: 100%;
   height: 100vh;
-  background: url('img/blue-blur.jpg') center no-repeat;
+  /*background: url('img/blue-blur.jpg') center no-repeat;*/
   background-size: cover;
   position: relative;
   text-align: center;
   overflow-y: scroll;
+  padding-top: 10px;
 }
 
 .new-game-form {
@@ -250,14 +258,13 @@ input {
 .submit {
   width: 150px;
   height: 40px;
-  background: #00CCCC;
+  background: #063852;
   color: white;
   text-align: center;
   line-height: 40px;
   font-size: 20px;
   margin: auto;
   margin-top: 20px;
-  border-radius: 5px;
   margin-bottom: 20px;
   -webkit-box-shadow: -2px 3px 22px -6px rgba(0,0,0,0.87);
   -moz-box-shadow: -2px 3px 22px -6px rgba(0,0,0,0.87);
@@ -268,8 +275,6 @@ input {
 .series-container {
   width: 100%;
   height: 100vh;
-  background: url('img/blue-blur.jpg') center no-repeat;
-  background-size: cover;
   padding-top: 20px;
   overflow-y: scroll;
   text-align: center;
@@ -278,7 +283,7 @@ input {
 .new-series-button {
   width: 150px;
   height: 40px;
-  background: #00CCCC;
+  background: #063852;
   color: white;
   text-align: center;
   margin-right: 10px;
@@ -288,6 +293,7 @@ input {
   -webkit-box-shadow: -2px 3px 22px -6px rgba(0,0,0,0.87);
   -moz-box-shadow: -2px 3px 22px -6px rgba(0,0,0,0.87);
   box-shadow: -2px 3px 22px -6px rgba(0,0,0,0.87);
+  cursor: pointer;
 }
 
 .new-series-form {
@@ -305,14 +311,14 @@ input {
 }
 
 .series-list {
-  width: 400px;
+  width: 50%;
   min-height: 60px;
   margin: auto;
   margin-top: 10px;
+  margin-bottom: 10px;
   text-align: center;
   background: white;
   padding-top: 15px;
-  border-radius: 5px;
   -webkit-box-shadow: -2px 3px 22px -6px rgba(0,0,0,0.87);
   -moz-box-shadow: -2px 3px 22px -6px rgba(0,0,0,0.87);
   box-shadow: -2px 3px 22px -6px rgba(0,0,0,0.87);
@@ -323,14 +329,13 @@ input {
 }
 
 .game-list {
-  width: 300px;
-  min-height: 60px;
+  width: 60%;
+  min-height: 100px;
   margin: auto;
   margin-top: 10px;
   text-align: center;
   background: white;
-  padding-top: 10px;
-  border-radius: 5px;
+  padding-top: 25px;
   -webkit-box-shadow: -2px 3px 22px -6px rgba(0,0,0,0.87);
   -moz-box-shadow: -2px 3px 22px -6px rgba(0,0,0,0.87);
   box-shadow: -2px 3px 22px -6px rgba(0,0,0,0.87);
@@ -339,4 +344,15 @@ input {
 .series-title {
   font-family: "Crimson Text", serif;
   margin-top: 0;
+}
+
+.stats-box {
+  height: 75px;
+  line-height: 75px;
+  width: 30%;
+  margin: auto;
+  display: inline-block;
+  -webkit-box-shadow: -2px 3px 22px -6px rgba(0,0,0,0.87);
+  -moz-box-shadow: -2px 3px 22px -6px rgba(0,0,0,0.87);
+  box-shadow: -2px 3px 22px -6px rgba(0,0,0,0.87);
 }

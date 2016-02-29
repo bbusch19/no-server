@@ -12,4 +12,8 @@ angular.module('pongBreak').service('seriesService', function(fb) {
     return new Firebase(fb.url + '/series/' + seriesId + '/games');
   }
 
+  this.getScores = function(seriesId) {
+    return new Firebase(fb.url + '/series/' + seriesId + '/scoreboard');
+  }
+
 })
