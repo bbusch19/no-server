@@ -32,7 +32,7 @@
       </p>
     </div>
   </form>
-  <div class="game-list" ng-repeat="game in games">
+  <div class="game-list" ng-repeat="game in games | orderBy: createdAt: true">
     <delete-directive ng-click="deleteGame(game)"></delete-directive>
     <p>
       <strong>Final Score:</strong>
