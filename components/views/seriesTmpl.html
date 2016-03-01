@@ -9,6 +9,10 @@
       Return Home
     </p>
   </div>
+  <div>
+      <input class="series-filter" type="text" placeholder="Search..." ng-model="searchTerm" />
+  </div>
+
   <form class="new-series-form" ng-show="showSeriesForm">
     <input placeholder="Player1 name" ng-model="newPlayer1"/>
     <input placeholder="Player2 name" ng-model="newPlayer2"/>
@@ -20,7 +24,8 @@
 
   </form>
 
-  <div class="series-list" ng-repeat="info in series">
+  <div class="series-list" ng-repeat="info in series | filter:searchTerm">
+    <div class="delete-series-button">Delete</div>
     <a class = "series-link" ui-sref="play({seriesId: info.$id})">
       <p>
         {{info.player1Name}} V {{info.player2Name}}

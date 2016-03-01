@@ -8,6 +8,7 @@ angular.module('pongBreak').controller('playCtrl', function($scope, $firebaseObj
   var scoreboard = $firebaseObject(scoresRef);
   scoreboard.$bindTo($scope, 'scoreboard');
 
+
   $scope.showNewGameForm = false;
   $scope.toggleNewGameForm = function(showNewGameForm) {
     $scope.showNewGameForm = !showNewGameForm;
@@ -28,6 +29,15 @@ angular.module('pongBreak').controller('playCtrl', function($scope, $firebaseObj
         player1Score: player1Score,
         player2Score: player2Score
       })
+    }
+
+    $scope.deleteGame = function(game) {
+      if (game.player1Score > game.player2Score) {
+        $scope.scoreboard.player1Wins--;
+      } else {
+        $scope.scoreboard.player2Wins--;
+      }
+      $scope.games.$remove(game);
     }
 
 
