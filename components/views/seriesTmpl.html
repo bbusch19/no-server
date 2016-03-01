@@ -25,7 +25,7 @@
   </form>
 
   <div class="series-list" ng-repeat="info in series | filter:searchTerm">
-    <div class="delete-series-button">Delete</div>
+    <div ng-click="deleteSeries(info)" class="delete-series-button">Delete</div>
     <a class = "series-link" ui-sref="play({seriesId: info.$id})">
       <p>
         {{info.player1Name}} V {{info.player2Name}}

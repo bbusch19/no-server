@@ -21,7 +21,8 @@ angular.module('pongBreak').controller('seriesCtrl', function($scope, $firebaseA
   };
 
   $scope.deleteSeries = function(info) {
-    $scope.series.$remove(info);
+    var conf = confirm("Are you sure you want to delete?");
+    if (conf) $scope.series.$remove(info);
   }
 
 });

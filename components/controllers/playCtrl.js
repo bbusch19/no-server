@@ -32,12 +32,15 @@ angular.module('pongBreak').controller('playCtrl', function($scope, $firebaseObj
     }
 
     $scope.deleteGame = function(game) {
-      if (game.player1Score > game.player2Score) {
+      var conf = confirm("Are you sure you want to delete?");
+      if (conf){
+        if (game.player1Score > game.player2Score) {
         $scope.scoreboard.player1Wins--;
       } else {
         $scope.scoreboard.player2Wins--;
       }
-      $scope.games.$remove(game);
+        $scope.games.$remove(game);
+     }
     }
 
 
