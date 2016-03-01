@@ -20,6 +20,7 @@ angular.module('pongBreak').controller('playCtrl', function($scope, $firebaseObj
 
     $scope.createGame = function(player1Score, player2Score) {
       $scope.showNewGameForm = false;
+      var thisDate = new Date().getTime();
       if(player1Score > player2Score) {
         $scope.scoreboard.player1Wins++;
       } else {
@@ -27,7 +28,8 @@ angular.module('pongBreak').controller('playCtrl', function($scope, $firebaseObj
       }
       $scope.games.$add({
         player1Score: player1Score,
-        player2Score: player2Score
+        player2Score: player2Score,
+        createdAt: thisDate
       })
     }
 
