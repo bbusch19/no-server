@@ -37,6 +37,11 @@ input {
   text-align: center;
 }
 
+@font-face {
+  font-family: anurati;
+  src: url(Anurati-Regular.otf);
+}
+
 .animated {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
@@ -106,6 +111,7 @@ input {
   -webkit-box-shadow: -2px 3px 39px -6px rgba(0,0,0,0.87);
   -moz-box-shadow: -2px 3px 39px -6px rgba(0,0,0,0.87);
   box-shadow: -2px 3px 39px -6px rgba(0,0,0,0.87);
+  animation-delay: .3s
 }
 
 .home-wrapper {
@@ -130,19 +136,19 @@ input {
   width: 600px;
   height: 150px;
   background: black;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.5);
   margin: auto;
   margin-top: -100px;
 }
 
 .header-text {
   font-family: "Cinzel", serif;
+  /*font-family: anurati;*/
   font-size: 60px;
   color: white;
   line-height: 150px;
   font-size: 75px;
-  opacity: 1;
-  animation-delay: .5s;
+  font-weight: 400;
 }
 
 .play {
@@ -393,7 +399,7 @@ input {
   text-align: center;
   overflow: hidden;
   background: white;
-  padding-top: 25px;
+  padding-top: 15px;
   -webkit-box-shadow: -2px 3px 22px -6px rgba(0,0,0,0.87);
   -moz-box-shadow: -2px 3px 22px -6px rgba(0,0,0,0.87);
   box-shadow: -2px 3px 22px -6px rgba(0,0,0,0.87);
@@ -426,7 +432,7 @@ input {
   float: left;
   background: #F62A00;
   color: white;
-  margin-top: -25px;
+  margin-top: -15px;
   line-height: 100px;
   margin-left: -20%;
   transition: .5s;

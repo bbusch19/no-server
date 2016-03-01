@@ -34,8 +34,12 @@
   </form>
   <div class="game-list" ng-repeat="game in games">
     <delete-directive ng-click="deleteGame(game)"></delete-directive>
-    <strong>Final Score:</strong><br />
-    {{series.player1Name}}: {{game.player1Score}} {{series.player2Name}}: {{game.player2Score}}
+    <p>
+      <strong>Final Score:</strong>
+    </p><br />
+    <p>
+      {{series.player1Name}}: {{game.player1Score}} {{series.player2Name}}: {{game.player2Score}}
+    </p>
   </div>
 
 </div>
